@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+
+body{
+    font-family:'Gabarito',sans-serif;
+}
+
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap: 10px;
+    align-items: baseline;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+
+.navbar_title{
+    color: blueviolet;
+}
+
+.navbar_2{
+    padding: 10px;
+    border-radius: 30px;
+    width: 60%;
+    border: solid black 1px;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar input{
+    border: none;
+    width: 100%;
+    font: size 21px; 
+    background: transparent;
+    background: white;
+}
+
+.navbar_2 input:focus{
+    outline: none;
+}
+
+.navbar_3{
+    display: flex;
+    gap: 10px;
+}
+
+/* mylearning */
+.mylearning{
+    position: relative;
+    cursor: pointer;
+
+}
+.mylearning__popup{
+    position: absolute ;
+    background-color: white;
+    width: 100px;
+    top:150%
+    padding:20px;
+    border: solid black 1px;
+    display:none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+    display: flex;
+}
+
+
+.categories{
+    display: flex;
+    padding: 10px;
+    border-bottom: solid black 1px;
+    justify-content: space-around;
+    
+}
+
+.categories p{
+    background: #A435F0;
+    color: azure;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid black 1px;
+
+}
+
+.categories p:hover{
+    background-color:transparent;
+    transition: 1s;
+    color: black;
+    border: solid black 1px;
+    
+}
+
+.sales_1 img{
+    width:100%;
+    height:300px;
+}
+
+.sales_1 img{
+    position: relative;
+}
+
+.sales_ad{
+    width: 35;
+    border: solid black 2px;
+    padding: 2%;
+    position: absolute;
+    background: white;
+    top: 32%;
+    margin-left: 20px;
+    animation-name: saleimg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    }
+    @keyframes saleimg{
+       0%{
+        transform: scale(0);
+        opacity: 0;
+       }
+       100%{
+        opacity: 1;
+        transform:scale(1) ;
+       }
+    }
+    
+.recommened{
+    padding: 10px;
+   
+}
+.course-card{
+    width: 200px;
+}
+
+
+.course-card img{
+    width: 200px;
+}
+.recom_2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.recom_2 img{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.topic{
+    padding: 10px;
+}
+
+.Topic_title{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.Topic_title p{
+    border: solid black 1px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+.footer_new{
+    display: flex;
+    gap: 10px;
+}
+
+.footer_2{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+.footer{
+    padding: 30px;
+    background: black;
+    color: white;
+}
+.footer p{
+    margin-top: 20px;
+}
+
+/* medial quries */
+
+@media screen and
+    (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar_2 {
+            width: 100%;
+        }
+        .navbar_3{display: none;
+    }
+
+        .categories {
+            flex-direction: row;
+            align-items: center;
+            gap: 4.5px;
+
+        }
+        .phone{
+            display: none;
+        }
+
+        .sales_1 img {
+            height: 200px;
+        }
+
+        .sales_ad {
+            width: 50%;
+            top: 20%;
+            margin-top: 50px;
+        }
+
+        .course-card {
+            width: 100%;
+        }
+
+        .course-card img {
+            width: 100%;
+        }
+      .recommened  {
+        flex-direction: column;
+        align-items: center;
+text-align: center;
+      }
+        .recom_2 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .recom_2 img {
+            height: 200px;
+        }
+
+        .Topic_title p {
+            flex-basis: 100%;
+        }
+
+        .footer_2 {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
